@@ -1,0 +1,38 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: 🎯 Trading Strategies
+  chapters:
+  - file: content/trading-strategies/momentum_strategies
+  - file: content/trading-strategies/mean_reversion_analysis
+  - file: content/trading-strategies/pairs_trading
+  - file: content/trading-strategies/algorithmic_execution
+
+- caption: 📈 Portfolio & Risk Management
+  chapters:
+  - file: content/portfolio-risk/portfolio_optimization
+  - file: content/portfolio-risk/risk_models
+  - file: content/portfolio-risk/volatility_modeling
+  - file: content/portfolio-risk/backtesting_framework
+
+- caption: 💰 Derivatives & Fixed Income
+  chapters:
+  - file: content/derivatives-fixed-income/options_pricing
+  - file: content/derivatives-fixed-income/fixed_income_analytics
+  - file: content/derivatives-fixed-income/credit_risk_modeling
+
+- caption: 🔍 Market Analysis
+  chapters:
+  - file: content/market-analysis/factor_models
+  - file: content/market-analysis/market_microstructure
+  - file: content/market-analysis/regime_detection
+  - file: content/market-analysis/network_analysis
+
+- caption: 🤖 Machine Learning & Data
+  chapters:
+  - file: content/ml-data/machine_learning_returns
+  - file: content/ml-data/alternative_data
+  - file: content/ml-data/cryptocurrency_analysis

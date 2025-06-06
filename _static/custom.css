@@ -1,0 +1,54 @@
+/* Keep all left sidebar categories fully expanded */
+.bd-sidebar-primary .bd-toc .toctree-l1 > .toctree-l2 {
+    display: block !important;
+}
+
+/* Ensure category groups are always expanded */
+.bd-sidebar-primary .caption {
+    cursor: default;
+}
+
+.bd-sidebar-primary .caption + ul {
+    display: block !important;
+}
+
+/* Remove collapse/expand arrows since we want everything expanded */
+.bd-sidebar-primary .toctree-expand {
+    display: none;
+}
+
+/* Make right sidebar TOC completely static - disable all JS interactions */
+.bd-sidebar-secondary {
+    pointer-events: none;
+}
+
+.bd-sidebar-secondary a {
+    pointer-events: auto;
+}
+
+/* Force all TOC items to be visible and static */
+.bd-sidebar-secondary ul,
+.bd-sidebar-secondary li,
+.bd-sidebar-secondary .bd-toc ul,
+.bd-sidebar-secondary .bd-toc li {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Remove any interactive elements that could trigger JS */
+.bd-sidebar-secondary .toctree-expand,
+.bd-sidebar-secondary .toc-toggle,
+.bd-sidebar-secondary [role="button"],
+.bd-sidebar-secondary .toggle,
+.bd-sidebar-secondary .collapse {
+    display: none !important;
+}
+
+/* Disable any animations/transitions */
+.bd-sidebar-secondary * {
+    transition: none !important;
+    animation: none !important;
+}
